@@ -1,0 +1,12 @@
+java  对象头
+
+java  中的锁      1.无锁
+            2.偏向锁     利用对象头存储 线程id实现
+            3.轻量级     CAS
+            4.重量级     CAS
+            
+第一种使用 synchronized
+
+
+第二种使用 Lock
+
