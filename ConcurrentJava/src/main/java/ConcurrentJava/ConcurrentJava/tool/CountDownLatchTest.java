@@ -46,5 +46,8 @@ public class CountDownLatchTest {
             System.out.println(Thread.currentThread().getName()+"出发");
         }
     }
-
+    
+    //秒杀 超卖 少卖  数据库库存乐观锁
+    //订单判断  队列   缓存中用户名，时间点
+    
 }

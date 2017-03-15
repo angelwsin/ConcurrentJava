@@ -23,6 +23,7 @@ public class ExecutorTest {
          *                2.LinkedBlockingQueue  有界阻塞链表
          *                3.SynchronousQueue     不存储元素的阻塞队列
          *                4.PriorityBlockingQueue 优先级无限阻塞队列
+         *                5.DelayQueue            延时
          * threadFactory 创建线程的工厂
          * handler       饱和策略
          */

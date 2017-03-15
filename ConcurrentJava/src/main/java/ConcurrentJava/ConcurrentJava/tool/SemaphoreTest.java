@@ -37,7 +37,7 @@ static class  CyclicBarrierThread extends Thread{
             }
             System.out.println(Thread.currentThread().getName()+"得到资源");
             try {
-                Thread.sleep(2000);
+                Thread.sleep(5000);
             } catch (InterruptedException e) {
               e.printStackTrace();
             }
