@@ -14,7 +14,7 @@ public class FutureTest {
                 return "返回值";
             }
         });
-         
+        f.cancel(false);//false 取消  true中断 
         f.run();
         System.out.println(f.get());
         
@@ -30,9 +30,9 @@ public class FutureTest {
          * COMPLETING = 1  执行run() 并调用 Callable.call()方法
          * NORMAL = 2      设置结果值之后
          * EXCEPTIONAL = 3 异常状态
-         * CANCELLED = 4
-         * INTERRUPTING = 5
-         * INTERRUPTED = 6
+         * CANCELLED = 4   当状态为 NEW 的才可以取消
+         * INTERRUPTING = 5 当状态为 NEW 的才可以中断
+         * INTERRUPTED = 6  调用 thread.interrupt() 改成已中断
          * 
          * callable   被执行的task
          * outcome    调用 get()的返回值
